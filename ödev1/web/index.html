@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="template/js/jquery-3.4.1.min.js" type="text/javascript"></script>
+
+    <link href="template/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="template/bootstrap/css/bootstrap-reboot.min.css" rel="stylesheet" type="text/css"/>
+    <link href="template/bootstrap/css/bootstrap-grid.min.css" rel="stylesheet" type="text/css"/>
+    <script>
+
+        function validateForm(durum) {
+            var x = document.forms["myForm"]["fname"].value;
+            if (x == "") {
+                alert("Alanları Doldurun");
+            } else
+                alert(durum);
+
+        }
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+// Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+// Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+        function aa(olay) {
+            alert(olay);
+        }
+        function isValid(frm)
+        {
+            var email = frm.email.value;
+            var atpos = email.indexOf("@");
+            var dotpos = email.lastIndexOf(".");
+
+            if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= email.length)
+            {
+                alert("Geçerli email adresi girin");
+                return false;
+            } else
+            {
+                return true;
+            }
+        }
+
+    </script>
+    <style>
+
+
+        body{
+            background-color:   background;
+
+            padding:  15px;
+
+        }
+        table#aa {
+            text-align: center;
+
+
+            background-color:    darkorange;
+            color:  #fcf8e3;
+            width: 100%;
+            font-size:  15px;
+        } 
+        form#cc {
+            margin: 4rem;
+
+
+        }
+        .q{
+
+
+        }
+        .ww{
+            background-color:  #000;
+            padding-top: 4px;
+            margin:4px;
+            width: 100%;
+        }
+        div {
+            border-radius: 1px;
+
+
+        }
+        .header {
+            padding: 1rem;
+            background: #ed969e   ;
+            color: white;
+            font-size: 20px;
+        }
+        .e{
+
+        }
+        .container-bg{
+            background-color:  white ;
+            padding:  5px;
+        }
+        .container{
+            padding-top:0px ;
+            margin:0px ;
+        }
+
+        .v{
+            background-color:   #bee5eb;
+
+        }      
+        .e{
+
+        }
+
+
+    </style>
+</head>
+<body id="jj">
+<div class="header ">
+
+    <img src="https://www.google.com.tr/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" width="200" height="70"   />
+</div>
+<div class="container-bg">
+    <div class="container">
+        <div id="e"style="width: 1310px;"  class="row"  >
+
+
+            <table id="aa" border="2" ><tr>
+                    <th <a href="#" onclick="javascript: window.open('http://google.com.tr')" ></a>Anasayfa</th>
+
+                    <th <a href="#" onclick="javascript: window.open('http://google.com.tr')" ></a>İndirmeler</th>
+                    <th onClick="location.href = 'http://google.com.tr'">Forum</th>
+                    <th onClick="location.href = 'http://google.com.tr'">Haberler</th>
+                    <th onClick="location.href = 'http://google.com.tr'">Bizimle İletişime Geçin</th></tr>
+
+            </table>   
+        </div>
+
+        <div  id="ww" class="row"  >
+            <div id="q" class="col-6 bg-warning text-white "  style="width: 100%;">
+
+
+                <button onclick="aa('KAYIT TAMAMLANDI')"  type="submit" class=" btn btn-light btn-block" width="%100"  >KAYIT  OL</button>
+
+
+                <form id="cc"  onsubmit="return isValid(this)" name="myForm"   method="post" action="" class="needs-validation" novalidate>
+
+                    <div class=" form-group form-row">
+                        <label for="ad" class="col-3 col-form-label">Ad:</label>
+                        <input type="text" name="fname" class="col-9 form-control" id="uname" placeholder="Adınızı giriniz" required>
+                            <div class="valid-feedback">Geçerli</div>
+                            <div class="invalid-feedback">Bu alanı doldurun.</div>
+                    </div>
+
+                    <div class="form-group form-row">
+                        <label for="soyad" class=" col-3 col-form-label">Soyad:</label>
+                        <input type="text" class="col-9 form-control" id="uname" placeholder="Soydınızı giriniz" name="soyad" required>
+                            <div class="valid-feedback">Geçerli</div>
+                            <div class="invalid-feedback">Bu alanı doldurun.</div>
+                    </div>
+
+                    <div class="form-group form-row">
+                        <label for="mail" class="col-3 col-form-label">E-Mail:</label>
+                        <input type="email" class="col-9 form-control" id="uname" placeholder="E-mail adresinizi giriniz" name="email" required>
+                            <div class="valid-feedback">Geçerli</div>
+                            <div class="invalid-feedback">Bu alanı doldurun.</div>
+
+                    </div>
+
+                    <div class="form-group form-row">
+                        <label for="kulAd" class=" col-3 col-form-label">Kullanıcı Adı:</label>
+                        <input type="text" class="col-9 form-control" id="uname" placeholder="Kullanıcı adınızı giriniz" name="kulAd" required>
+                            <div class="valid-feedback">Geçerli</div>
+                            <div class="invalid-feedback">Bu alanı doldurun.</div>
+                    </div>
+
+                    <div class="form-group form-row">
+                        <label for="sifre"class="col-3 col-form-label">Şifre:</label>
+                        <input type="password" class="col-9 form-control" id="pwd" placeholder="Şİfrenizi girin" name="sifre" required>
+                            <div class="valid-feedback">Geçerli</div>
+                            <div class="invalid-feedback">Bu alanı doldurun.</div>
+                    </div>
+
+                    <div class="form-group form-row">
+                        <label for="takım"class="col-3">Takım:</label>
+                        <select id="takım" class="col-9form-control">
+                            <option selected>Seçiniz..</option>
+                            <option>Galatasaray</option>
+                            <option>Fenerbahçe</option>
+                            <option>Beşiktaş</option>
+                        </select>
+
+                        <div class="valid-feedback">Geçerli</div>
+                        <div class="invalid-feedback">Bu alanı doldurun.</div>
+                    </div>
+
+                    <div class="form-group form-row">
+                        <label for="takım" class="col-3 text-left">Cinsiyet:</label>
+
+                        <input type="radio" name="cinsiyet"> Bay <input type="radio" name="cinsiyet"> Bayan
+                                </div>
+                                <button type="reset"  class="btn btn-primary ">Temizle</button>   
+                                <button  type="submit" class="btn btn-primary"  onclick="validateForm('Yüklendi')">Gönder</button>
+                                </form>
+
+
+                                <p><a href="#aa">yukarı çık</a></p>
+                                </div>
+                                <div class="col-6" >
+                                    <table id="v"  ><tr>
+                                            <th>    <img src="IMG_20180828_071658.jpg" width="350" height="220" alt="" style="padding:  1rem"  /><br>
+                                        <img src="IMG_20180828_071658.jpg" width="350" height="220" alt="" style="padding: 1rem"/><br></th>
+                                        <br>
+
+                                        <th> <img src="IMG_20180828_071658.jpg" width="350" height="220" alt="" style="padding: 1rem"/><br>
+                                        <img src="IMG_20180828_071658.jpg" width="350" height="220" alt="" style="padding: 1rem"/><br></th>
+                                        </tr>
+
+                                        <br>
+                                    </table>
+
+
+                                    <textarea name="" rows="3" cols="90" style="background-color: #ccccff"  >Paragraf için:
+                                    </textarea>    
+                                </div></div></div> </div>
+
+
+                                </body>
+
+                                <script src="template/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+                                <script src="template/bootstrap/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+                                </html>

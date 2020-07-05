@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <script>
+        function add(){
+       $('#dd'). append('<img id="theImg" src="IMG_20180828_071658.jpg" alt="" style="margin:10px;" width="130" height="130"  />');   
+          }
+          function dlt(){
+               $('#theImg').remove();
+                    
+    }
+    </script>
+    
+    <style>
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color:   #0056b3;
+            text-align:   left;
+            color: #040505;
+            padding:20px ;
+        }
+
+        .container-bg{
+            background-color:   #80bdff ;
+            padding:1rem;
+
+        }
+        .container{
+            height: 800px;
+            padding: 0rem;
+            margin:0rem ;
+
+        }
+
+        .header {
+            padding: 1rem;
+            text-align: right;
+            background: #1abc9c;
+            color: white;
+            font-size: 20px;
+
+        }
+       
+    </style>
+    
+        
+    <script src="template/js/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <link href="template/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="template/bootstrap/css/bootstrap-reboot.min.css" rel="stylesheet" type="text/css"/>
+    <link href="template/bootstrap/css/bootstrap-grid.min.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+<div class="header" > 
+    <div class="row">     
+        <div class="col">
+            <img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_reddit-512.png" style="float:left;" width="50" height="50" />
+        </div>
+        <div class="col">
+            <p id="username"></p>
+            <script>
+        document.getElementById("username").innerHTML = "Merhaba, {" + prompt("Adınızı girin:") + "}";
+            </script>
+        </div> 
+    </div></div>
+
+<div class="container-bg">
+    <div class="container" >
+
+        <div class="row">
+
+            <div class="col"  style="float:left">
+                <img  src="IMG_20180828_071658.jpg" style="
+                      -webkit-box-shadow: 0 0 8px 10px black;
+                      -moz-box-shadow: 0 0 8px 10px black;
+                      box-shadow: 0 0 8px 10px black;"  width="420" height="180" >
+                    <br><br>
+                    <button onclick="add()" type="submit" class="btn btn-success" style="width: 190px; height: 40px;" >Resim Ekle</button>
+                  
+                  
+                    <button onclick="dlt()" type="button" class="btn btn-danger" style="width: 190px; height: 40px;">Resim Sil</button>
+            </div> 
+            <div  class="col" style="float: center;">
+                <h2 style="text-shadow:5px -4px 7px #000">BAŞLIK</h2>
+                <p  style="generic-family: cursive; font-size: 15px;"> 
+                    Örneğin metnin başlığı ve metnin içeriğini ayırabiliyoruz.
+                    ⇒  Bootstrap popover oluşturmak için yapmamız gerekenler:
+                    Bir Html etiketi oluşturup attribute kısmına data-toggle = “popover” yazıyoruz.
+                    Html etiketinin title attribute’una göstermek istediğimiz metnin başlığını yazıyoruz.
+                    gggggHtml etiketinin data-content attribute’una göstermek istediğimiz metnin içeriğini yazıyoruz.
+                    Son olarak aşağıdaki jquery kodlarını sayfamıza ekliyoruz.,
+                    Örneğin metnin başlığı ve metnin içeriğini ayırabiliyoruz.
+                    ⇒  Bootstrap popover oluşturmak için yapmamız gerekenler:
+                    Bir Html etiketi oluşturup attribute kısmına data-toggle = “popover” yazıyoruz.
+
+                </p>
+            </div>
+
+        </div>
+       
+        <div class="row" >
+            <div class="col">  
+
+                <div id="dd"style=" padding:10px ; background-color: #ff6e9d;
+                     width: 1100px; height: 180px; white-space: nowrap;
+                     overflow-x: visible;  overflow-y: hidden; " >
+                    <img  src="IMG_20180828_071658.jpg" alt="" style="margin:10px;" width="130" height="130"  /> 
+                    
+                    <img src="IMG_20180828_071658.jpg" alt="" style="margin:10px;" width="130" height="130" />
+                    <img src="IMG_20180828_071658.jpg" alt="" style="margin:10px;" width="130" height="130"/>
+                    <img src="IMG_20180828_071658.jpg" alt="" style="margin:10px;" width="130" height="130"/>
+                    <img src="IMG_20180828_071658.jpg" alt="" style="margin:10px;" width="130" height="130"/>
+                    <img src="IMG_20180828_071658.jpg" alt="" style="margin:10px;" width="130" height="130"/>
+                    <img src="IMG_20180828_071658.jpg" alt="" style="margin:10px;" width="130" height="130"/>
+                    <img src="IMG_20180828_071658.jpg" alt="" style="margin:10px;" width="130" height="130"/>
+                    <img src="IMG_20180828_071658.jpg" alt="" style="margin:10px;" width="130" height="130"/>
+                    <img src="IMG_20180828_071658.jpg" alt="" style="margin:10px;" width="130" height="130"/>
+                    </div>
+
+
+            </div>
+        </div>
+    </div></div>
+
+
+<div class="footer" >
+    <p>Designed by...</p>
+    <a href="http://www.google.com.tr/" style="color:black">link1</a>
+    <a href="http://www.google.com.tr"  style="color:black">Link2</a>
+    <a href="http://www.google.com.tr"  style="color:black">Link3</a>
+</div>
+
+
+</body>
+<script src="template/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="template/bootstrap/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+</html>
