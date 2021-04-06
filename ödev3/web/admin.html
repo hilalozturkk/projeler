@@ -21,7 +21,7 @@ and open the template in the editor.
 
         function haberleriGetir() {
             $("#tableHaberler tbody").empty();
-            $.get("http://www.star.com.tr/rss/rss.asp", function (data) {
+            $.get("https://www.aksam.com.tr/rss/rss.asp", function (data) {
                 var $XML = $(data);
                 $XML.find("item").each(function () {
                     var $this = $(this),
