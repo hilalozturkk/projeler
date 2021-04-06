@@ -1,6 +1,6 @@
 
-## Üzerine staj yaptığım projeler 
-### Kullandığım teknolojiler :
+### Staj Projelerim 
+#### Kullandığım teknolojiler :
 - HTML
 - CSS
 - JS - AJAX
